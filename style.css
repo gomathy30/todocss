@@ -1,0 +1,126 @@
+h1{
+    margin: 12px 0;
+    font-style: oblique;
+    text-align: center;
+    color:rgb(232, 245, 88);
+    animation: fadesIn 0.6s 1s both;
+}
+body{
+    background:linear-gradient(to right, rgb(76, 146, 194),rgb(165, 211, 242),rgba(165, 211, 2420));
+    display:grid;
+    }
+    input{
+        padding:6px 4px;
+        width:70%;
+    }
+
+
+
+
+
+p{
+    text-align: center;
+    animation: fadesIn 0.5s 1.3s both;
+}
+
+.container{
+   background-color: white;
+   margin:auto;
+   padding:10px;
+   margin-top: 20px;
+   width: 400px;
+   box-shadow: 0 0 10px black;
+   align-items: center;
+    text-align: left;
+    animation: containerInput 0.8s 0.2s;
+    animation-fill-mode: both;
+   
+}
+@keyframes containerInput{
+    0%{
+        opacity: 0;
+        transform: translatey(-120deg);
+    }
+    50%{
+        transform: translatey(70px);
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+@keyframes fadesIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+input, button{
+    background: palegoldenrod;
+    animation: fadesIn 0.8s 1.8s both;
+}  
+
+
+
+#unList{
+    padding: 10px 5px;
+    color: blue;
+    margin: 12px;
+    transition:all .4s ease-in-out;
+}
+#unList:hover{
+margin: 30px;
+color: red;
+
+}
+
+
+.completed span:nth-child(1){
+   
+   text-decoration: line-through;
+    color:black;
+   
+}
+
+.trashcan{
+     font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+
+}
+.trashcan:hover{
+    opacity: 1;
+}
+
+.error{
+    font-style: oblique;
+    font-size: 15px;
+    color:red;
+    animation: errorMessage 1s linear infinite;
+    margin: 5px;
+   
+   
+}
+@keyframes errorMessage{
+    
+    0%{
+        opcacity:0
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        object-position: 1;
+    }
+    
+}
