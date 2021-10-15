@@ -9,11 +9,11 @@ btn.addEventListener("click", function () {
   const text = input.value; 
   inputArray.push(text);
   if (text.length == 0) {
-    document.querySelector('.error').innerText= "Du måste skriva något";
+    document.querySelector('.error').innerText= "You must write something.";
     document.querySelector('.error').classList.add('visible');
     return;
   } else {
-    input.value= "";
+    document.querySelector('.error').classList.remove('visible');
   }
 
   var i;
@@ -44,7 +44,7 @@ btn.addEventListener("click", function () {
   const trashcan = document.createElement("span");
   trashcan.innerHTML = "&#x1F5D1";
   trashcan.setAttribute("class", "trashcan");
-  itemLabel.appendChild(trashcan);
+  li1.appendChild(trashcan);
 
   trashcan.addEventListener("click", function () {
     li1.remove();
